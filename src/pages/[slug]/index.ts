@@ -1,7 +1,5 @@
 import { type APIRoute } from "astro"
 export const GET: APIRoute = async ({  params, locals, cookies, url }) => {
-
-    
     const { slug } = params
     if (!slug) {
         return new Response("not found", {
@@ -21,7 +19,12 @@ export const GET: APIRoute = async ({  params, locals, cookies, url }) => {
         cookies.set("abl", current)
         const target = new URL("/confirm", url)
         target.searchParams.set("to", shorten.target)
-        return Response.redirect(target, 307)
+        return new Response("redirect", {
+            status: 307,
+            headers: {
+                location: target.toString(),
+            },
+        })
     }
     return Response.redirect(shorten.target, 307)
 }
