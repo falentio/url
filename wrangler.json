@@ -1,0 +1,11 @@
+{
+    "$schema": "node_modules/wrangler/config-schema.json",
+    "compatibility_date": "2025-5-1",
+    "d1_databases": [
+        {
+            "binding": "DB",
+            "database_name": "url",
+            "database_id": "c8a2f2e3-a60e-41bb-931e-147ff77f3bd8"
+        }
+    ]
+}

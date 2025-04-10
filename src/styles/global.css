@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        font-family: 'Fira Code Variable', monospace;
+    }
+}
+
+@theme {
+    --color-border: hsl(var(--border));
+    --color-input: hsl(var(--input));
+    --color-ring: hsl(var(--ring));
+    --color-background: #1E1E1E; /* VS Code dark theme background */
+    --color-foreground: #D4D4D4; /* VS Code text color */
+    --color-comment: #6A9955; /* Green comments */
+    --color-string: #CE9178; /* Orange-brown strings */
+    --color-keyword: #569CD6; /* Blue keywords */
+    --color-function: #DCDCAA; /* Yellow functions */
+    --color-variable: #9CDCFE; /* Light blue variables */
+    --color-type: #4EC9B0; /* Teal types */
+    --color-constant: #4FC1FF; /* Bright blue constants */
+    --color-class: #4EC9B0; /* Teal class names */
+    --color-error: #F44747; /* Red errors */
+    --color-warning: #FF8C00; /* Orange warnings */
+    --color-line-number: #858585; /* Gray line numbers */
+    --color-selection: #264F78; /* Blue selection */
+    --color-primary: #569CD6; /* Blue keywords */
+    --color-primary-foreground: #1E1E1E;
+    --color-secondary: #4EC9B0; /* Teal */
+    --color-secondary-foreground: #1E1E1E;
+    --color-destructive: #F44747; /* Red */
+    --color-destructive-foreground: #1E1E1E;
+    --color-muted: #252526; /* Slightly lighter than background */
+    --color-muted-foreground: #858585; /* Gray */
+    --color-accent: #DCDCAA; /* Yellow */
+    --color-accent-foreground: #1E1E1E;
+    --color-popover: #252526;
+    --color-popover-foreground: #D4D4D4;
+    --color-card: #252526;
+    --color-card-foreground: #D4D4D4;
+}
